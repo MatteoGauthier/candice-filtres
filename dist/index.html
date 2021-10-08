@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://unpkg.com/tailwindcss@2.2.16/dist/base.min.css" rel="stylesheet" />
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script type="module" crossorigin src="./assets/index.e423d7a6.js"></script>
+		<link rel="stylesheet" href="./assets/index.f982f9ce.css">
+	</head>
+	<body>
+		<div class="flex">
+			<img class="img_test radius" cid="photo" src="./assets/brooke-cagle--uHVRvDr7pg-unsplash.c9628fce.jpg" alt="image test" />
+			<canvas class="rightntop radius" id="canvas"> </canvas>
+		</div>
+		<div class="containeur">
+			<div class="flexbutton">
+				<div class="lumiere">
+					<button class="button espace" id="blacknwhite">Black & white</button>
+					<button class="buttonReset resetBtn">Supp</button>
+				</div>
+				<p>
+					Binarité noir et blanc: on parcours tous les pixels,puis on fait le sommes des valeurs des couleurs, si se résultat est suppérieure à 765 (255 (valeurs maximal par couleurs)x 3 (tr, tg, tb))/ 2(binarité seulement 2 possibilités) alors tr tb et tg seront assigné au blanc soit 255 sinon ils seront assigné au noir soit 0. VERT
+				</p>
+				<div class="lumiere">
+					<button class="button espace" id="rouge">filigrame rouge</button>
+					<button class="buttonReset resetBtn">Supp</button>
+				</div>
+				<p>
+				On garde les valeurs de base assigné à tous les pixels et on augmente juste tr (rouge). VERT
+				</p>
+				<div class="lumiere">
+					<button class="button espace" id="onlyred">scale gray + rouge</button>
+					<button class="buttonReset resetBtn">Supp</button>
+				</div>
+				<p>
+					On se base sur le "gray scale" et on met la valeur tr a une valeur différente des autres, pour garder le rouge. VERT
+				</p>
+			</div>
+			<div class="flexbutton">
+				<div class="lumiere">
+					<button class="button espace" id="grayscale">Gray Scale</button>
+					<button class="buttonReset resetBtn">Supp</button>
+				</div>
+				<p>
+					On crée une fonction grey qui fait la moyenne de tg tb et tr et cette valeur on l'assigne à chaque couleur.   VERT
+				</p>
+				<div class="lumiere">
+					<button class="button espace" id="negatif">négatif</button>
+					<button class="buttonReset resetBtn">Supp</button>
+				</div>
+				<p>
+				On parcours tous les pixels, et on prend leurs valeurs et on trouve leurs complémentaires: on y soustrait la valeur maximal 255.  VERT
+				</p>
+				<div class="lumiere">
+					<button class="button espace" id="luminosite">luminosité -</button>
+					<button class="button espace" id="lumiere">luminosité +</button>
+					<button class="buttonReset resetBtn">Supp</button>
+				</div>
+				<p>
+					Luminosité plus: on augmente la valeur de chaque couleur proportionnellement aux autres couleurs.  VERT
+          Luminosité moins: on soustrait la même valeur à chaque couleur.  VERT
+				</p>
+			</div>
+		</div>
+
+		
+	</body>
+</html>

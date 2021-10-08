@@ -1,0 +1,71 @@
+.button {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+ background-color: rgb(192, 239, 255);
+ border-radius: 2px;
+ margin-bottom: 1rem;
+ 
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.margin {
+ padding:3rem ;
+  
+}
+.rightntop {
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
+.flexbutton {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.containeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.lumiere {
+  display: flex;
+  flex-direction: row;
+}
+
+.espace {
+  margin-right: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+.buttonReset{
+  background-color: red;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+ border-radius: 2px;
+ margin-bottom: 1rem;
+ color: white;
+}
+.radius{
+
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 10px  rgba(0, 0, 0, 0.285));
+  max-width: 380px;
+}
+
+.img_test {
+
+  max-width: 380px;
+  margin-right: 10rem;
+  
+  filter: drop-shadow(1px 1px 10px  rgba(0, 0, 0, 0.285));
+}
